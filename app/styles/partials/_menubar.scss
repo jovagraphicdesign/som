@@ -1,0 +1,57 @@
+// menubar styles
+.navbar-brand{
+    width: 75%;
+    img{
+        width: 80%;
+        max-width: 350px;
+    }
+}
+.navbar{
+    background-color: rgba(255, 255, 255, 0.9)!important;
+    //height: 75px;
+    //overflow: hidden;
+    transition: .1s;
+}
+
+ul.navbar-nav li{
+//    width: fit-content; 
+}
+
+ul.navbar-nav li a{
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+ 
+ul.navbar-nav li a:hover{
+    //background-color: rgba(0, 0, 0, 0.5)
+}
+
+ul.navbar-nav li a::before{
+    border-left: 1px solid rgba(0,0,0,.5);
+    border-right: 1px solid rgba(0,0,0,.5);
+    
+    transform: scale(1,0);
+    
+}
+ul.navbar-nav li a::after{
+    border-top: 1px solid rgba(0,0,0,.5);
+    border-bottom: 1px solid rgba(0,0,0,.5);
+    // background-color: rgba(0, 0, 0, 0.1);
+    transform: scale(0,1);
+}
+ul.navbar-nav li a::before, ul.navbar-nav li a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+ul.navbar-nav li a:hover::before, ul.navbar-nav li a:hover::after{
+    transition: 0.35s;
+    transform: scale(1);
+    
+}

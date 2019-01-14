@@ -1,0 +1,90 @@
+// styles voor de dienstencheques pagina
+
+.betaalmiddel{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    h2{
+        color: $paars;
+    }
+    .watiseendienstencheque{
+        margin-top: 50px;
+        
+    }
+    .watkosteendiestencheque{
+        margin-top: 50px;
+    }
+    h3{
+        color: $paars;
+
+    }
+}
+
+.elektronisch{
+    background-color: $paars;
+    height: 100%;
+    color: $wit;
+    padding: 50px 0;
+    h2{
+        margin-bottom: 50px;
+    }
+    p{
+        margin-bottom: 50px;
+    }
+    ul{
+        list-style: none;
+        h3{
+            margin-bottom: 15px;
+        }
+        p{
+            margin: 0 0 10px 0;
+
+        }
+    }
+    ul > li:nth-child(4){
+        margin-bottom: 50px;
+    }
+}
+
+.overschakelen{
+    background-color: $groen;
+    height: 100%;
+    padding: 100px 0 100px 0;
+    color: $wit;
+    
+    h3{
+        margin-bottom: 50px;
+        text-align: left;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    ul{
+        list-style: none;
+        text-align: left;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        p{
+            margin: 0 0 10px 0;
+        }
+    }
+    ul > li:nth-child(4){
+        margin-bottom: 50px;
+    }
+}
+
+.bestellen{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    h2{
+        color: $paars;
+        margin-bottom: 50px;
+    }
+    p:last-of-type{
+        margin-bottom: 50px;
+    }
+    a{
+        font-size: .9rem;
+    }
+}

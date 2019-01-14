@@ -1,0 +1,41 @@
+footer{
+    background-image: url(../../images/poetstools.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    h3{
+        color: $paars;
+        
+    }
+    a{
+        color: black;
+        font-weight: 300;
+        transition: 0.2s
+        
+        
+    }
+    a:hover{
+        color: black;
+        font-weight: 500;
+        transition: 0.2s;
+    }
+}
+
+footer .kantoor p{
+    margin-bottom: 0px;
+}
+
+footer .overzicht ul, footer .links ul{
+    list-style: none;
+}
+
+footer .sociale .fab{
+    font-size: 2rem;
+    color: $paars;
+}
+@include media-breakpoint-up(lg){
+    footer{
+        padding-top: 200px!important;
+    }
+}

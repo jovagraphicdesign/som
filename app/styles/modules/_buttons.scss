@@ -1,0 +1,68 @@
+.btn-border{
+    color: $paars;
+    padding: 15px 35px 15px 35px;
+    border: 1px solid $paars;
+    border-radius: .25rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: .5s ease-in;
+    &:hover{
+        color: $wit;
+        font-weight: 600;
+        background-color: $paars;
+        text-decoration: none;
+        transition: .5s ease-in;
+    }
+}
+
+.btn-border-wit{
+    color: $wit;
+    padding: 15px 35px 15px 35px;
+    border: 1px solid $wit;
+    border-radius: .25rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: .5s ease-in;
+    &:hover{
+        color: $groen;
+        font-weight: 600;
+        background-color: $wit;
+        text-decoration: none;
+        transition: .5s ease-in;
+    }
+}
+
+
+.btn-vol-paars{
+    color: $wit;
+    background-color: $paars;
+    border: 1px solid $paars;
+    border-radius: .25rem;
+    padding: 10px 20px;
+    transition: .5s ease-in;
+    &:hover{
+        text-decoration: none;
+        color: $paars;
+        background-color: $wit;
+        transition: .5s ease-in;
+    }
+}
+
+.btn-vol-wit{
+    color: $paars;
+    background-color: $wit;
+    border: 1px solid $wit;
+    border-radius: .25rem;
+    padding: 10px 20px;
+    transition: .5s ease-in;
+    &:hover{
+        text-decoration: none;
+        color: $wit;
+        background-color: rgba($color: $groen, $alpha: .8);
+        transition: .5s ease-in;
+    }
+}
+.btn-primary{
+    background-color: $paars !important;
+    border-color: $paars !important;
+}

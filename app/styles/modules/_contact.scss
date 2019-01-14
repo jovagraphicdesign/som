@@ -1,0 +1,42 @@
+// styles voor contact pagina
+
+.contact{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    h1{
+        color: $paars;
+        margin-bottom: 50px; 
+    }
+}
+
+.contactGegevens{
+    .onsKantoor{
+        padding: 50px 20px;
+        border: 1px solid #aaa;
+        max-width: 530px;
+        margin: 0px 15px 15px 15px;
+        h3{
+            color: $paars;
+        }
+        a{
+            color: black;
+            display: block;
+            font-weight: 400;
+        }
+        p{
+            margin: 0;
+            span{
+                color: $oranje;
+                margin: 0;
+            }
+        }
+    }
+    img{
+        max-width: 530px;
+    }
+}
+
+.contactForm{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}

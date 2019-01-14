@@ -1,0 +1,196 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>som</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- fontawesome  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Logo Service Op Maat">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="poetshulp.html">Poetshulp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dienstencheques.html">Dienstencheques</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="vacatures.html">Vacatures</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contact</a>
+          </li>
+          </ul>
+      </div>
+    </nav>
+   
+    <div class="container contact">
+        <div class="container" data-aos="fade-down">
+            <h1>Neem contact op</h1>
+            <a class="btn-vol-paars" href="inschrijven.html">Vraag hier vrijblijvende informatie aan</a>
+        </div>
+    </div>
+
+    <section class="container contactGegevens">
+        <div class="row">
+            <div class="col-lg-4 onsKantoor" data-aos="fade-right" data-aos-delay="500">
+                <h3>Ons kantoor</h3>
+                <p>Weg Op Bree 25/B <br>
+                    3670 Meeuwen - Oudsbergen</p>
+                <a href="callto:011790189">011/79 01 89</a>
+                <a href="mailto:info@serviceopmaat.be">info@serviceopmaat.be</a>
+                <a href="https://www.google.com/maps/dir//som+meeuwen/@51.1030211,5.5242225,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47c0d6f8617f9c47:0x7b8eacd54db19033!2m2!1d5.5216759!2d51.0991546" target="_blank">Klik hier voor een routebeschrijving</a>
+                <p><strong>Maandag, Dinsdag en Donderdag open van:</strong></p>
+                <p><span>09 - 16 uur</span></p>
+                <p><strong>Op Woensdag en Vrijdag open van:</strong></p>
+                <p><span>09 - 12 uur</span></p>
+            </div>
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="500">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="images/som_(2).jpg" alt="kantoor buiten kant">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/som_(4).jpg" alt="kantoor onthaal">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/som_(5).jpg" alt="vergaderzaal">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/som_(7).jpg" alt="vergaderzaal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="container contactForm" data-aos="fade-up" data-aos-delay="500">
+        <form method="post" name="emailForm" action="contactToEmail.php" onsubmit="return validContactForm()">
+            <div class="form-group">
+                <label for="InputNaam">Naam</label>
+                <input class="form-control" name="nameEmail" type="text" placeholder="Naam" required>
+            </div>
+            <div class="form-group">
+                <label for="InputTelefoon">Telefoon</label>
+                <input class="form-control" name="telefoonEmail" type="text" placeholder="Telefoon" required>
+            </div>
+            <div class="form-group">
+                <label for="InputEmail">Email adres</label>
+                <input type="email" name="emailEmail" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="berichtEmail">Bericht</label>
+                <textarea name="berichtEmail" class="form-control" id="berichtEmail" rows="3" required></textarea>
+            </div>
+                <button type="submit" class="btn btn-primary">Verzenden</button>
+        </form>
+    </div>
+    
+   <footer class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-3 kantoor">
+            <h3>Kantoor:</h3>
+            <p>Weg Op Bree 25/B <br>
+            3670 Meeuwen - Oudsbergen</p>
+            <a href="callto:011790189">011/79 01 89</a>
+            <a href="mailto:info@serviceopmaat.be">info@serviceopmaat.be</a>
+          </div>
+          <div class="col-6 col-md-3 overzicht">
+            <h3>Overzicht:</h3>
+            <ul>
+            <li><a href="index.html">Home</a></li> 
+              <li><a href="poetshulp.html">Poetshulp</a></li>
+              <li><a href="dienstencheques.html">Dienstencheques</a></li>
+              <li><a href="vacatures.html">Vacatures</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 links">
+            <h3>Links:</h3>
+            <ul>
+              <li><a href="https://www.oudsbergen.be/" target="_blank">Oudsbergen</a></li> 
+              <li><a href="http://www.dienstencheques-vlaanderen.be/" target="_blank">Sodexo</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 sociale">
+            <h3>Sociale media:</h3>
+            <a href="https://www.facebook.com/Serviceopmaat-378987719509538/"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+    
+    
+    
+    
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- endbuild -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({duration: 1000});
+    </script>
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

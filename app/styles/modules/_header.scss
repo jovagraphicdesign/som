@@ -1,0 +1,27 @@
+//styles voor alle headers
+
+.poetshulp{background-image: url(../../images/poetshulpwerk.png);}
+.dienstencheques{background-image: url(../../images/dienstencheques.png);}
+.vacatures{background-image: url(../../images/poetshulptoppie.png)};
+.inschrijven{background-image: url(../../images/poetshulpwerk.png)};
+
+header{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    h1{
+        padding-top: 180px;
+        font-size: 2rem!important;
+        color: $wit;
+        line-height: 1;
+        text-shadow: 0px 9px 21.84px rgba(0, 0, 0, 0.9);
+    }
+}
+@include media-breakpoint-up(lg){
+    header{
+        h1{
+            font-size: 3rem!important;
+        }
+    }
+}

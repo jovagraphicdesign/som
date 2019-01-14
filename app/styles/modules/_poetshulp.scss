@@ -1,0 +1,70 @@
+// styles voor de poetshulp pagina
+
+.pageDiensten{
+    margin-top: 100px;
+    h2{
+        color: $paars;
+        margin-bottom: 50px;
+    }
+}
+
+.watdoeteenhuishoudhulp{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    h2{
+        color: $paars;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 50px; 
+    }
+    .schoonmaken{background-image: url(../../images/bgDienstenSchoonmaken.png);}
+    .wassenstrijken{background-image: url(../../images/bgDienstenWassenStrijken.png);}
+    .naaiwerken{background-image: url(../../images/bgDienstenNaaiwerken.png);}
+    .koken{background-image: url(../../images/bgDienstenKoken.png);}
+    .dienstenkaart{
+        position: relative;
+        padding: 0;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 15px;
+        width: 350px;
+        height: 350px; 
+        max-width: 350px;
+        max-height: 350px; 
+        color: $wit;
+        img{
+            width: 80px;
+            margin: 25px;
+        }
+        h3{
+            position: absolute;
+            top: 50px;
+            left: 40%
+        }
+        p{
+            width: 65%;
+            position: relative;
+            left: 30%;
+        }
+        
+    }
+
+}
+.infoSectie{
+    margin-bottom: 100px;
+}
+
+@include media-breakpoint-up(lg){
+    h2{
+        font-size: 2.5rem!important;
+        
+    }
+    .pageDiensten{
+        margin-top: 200px;
+    }
+    .watdoeteenhuishoudhulp{
+        margin-top: 200px;
+        margin-bottom: 150px;
+    }
+}
