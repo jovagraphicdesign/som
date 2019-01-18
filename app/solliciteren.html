@@ -61,12 +61,12 @@
    
     <header class="container-fluid vacatures">
         <div class="container">
-            <h1>Werken Bij SOM, geweldig dat bij ons team komt</h1>
+            <h1>Werken bij SOM, geweldig dat u bij ons team komt</h1>
         </div>
     </header>
     
     <div class="container soliciteren">
-        <h2>Solliciteer als Huishoudhulp</h2>
+        <h2>Solliciteer als huishoudhulp</h2>
         <form method="post" name="solliciteerForm" action="solliciteerToEmail.php">
             <div class="form-group">
                 <label for="InputNaam">Naam</label>
@@ -93,8 +93,8 @@
                 <input type="email" name="emailSol" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Email">
             </div>
             <div class="form-group">
-                <label for="InputDiploma">Behaald diploma</label>
-                <input class="form-control" name="diplomaSol" type="text" placeholder="Behaald diploma">
+                <label for="InputDiploma">Relevante ervaring</label>
+                <input class="form-control" name="diplomaSol" type="text" placeholder="Relevante ervaring">
             </div>
             <div class="form-group">
                 <label for="InputSom">Hoe heb je S.O.M. leren kennen?</label>
@@ -106,12 +106,13 @@
             </div>
             
             <div class="form-group">
-                <label for="InputUren">Op welke dagen?</label>
+                <label for="InputUren">Wat zijn jouw voorkeursdagen?</label>
+                <p><small>Deze dagen zijn onder voorbehoud!</small></p>
             </div>
             <div class="row checkDagen justify-content-around">
                 <div class="col-lg-2">       
                     <div class="form-check">
-                        <input class="form-check-input" name="opWelkeDagenSol[]" type="checkbox" value="maandagVoormiddag" id="maandagVoormiddagCheck">
+                        <input class="form-check-input" name="opWelkeDagenSol[]" type="checkbox" value="maandagVoormiddag" id="maandagVoormiddagCheck" required >
                         <label class="form-check-label" for="maandagVoormiddagCheck">
                             maandagvoormiddag
                         </label>
