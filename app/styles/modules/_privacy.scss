@@ -1,0 +1,26 @@
+//styles voor de privacy verklaring 
+.privacyverklaring{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .privacyTitle{
+        margin-bottom: 25px;
+    }
+    p span {
+        font-weight: 500;
+    }
+
+    .inleiding p {
+        font-weight: 400;
+    }
+    ul{
+        margin-left: 25px;
+        font-weight: 300;
+    }
+
+    p a{
+        color: $paars;
+        &:hover{
+            color: $paars;
+        }
+    }
+}

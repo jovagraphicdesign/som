@@ -9,6 +9,15 @@
         padding-left: 10px;
         padding-bottom: 20px;
     }
-
+    .verplicht{
+        color: $paars;
+        margin-top: -25px;
+    }
+    label a{
+        color: $paars;
+        &:hover{
+            color: $paars;
+        }
+    }
 }
 

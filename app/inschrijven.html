@@ -40,7 +40,7 @@
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -52,7 +52,7 @@
           <li class="nav-item">
             <a class="nav-link" href="vacatures.html">Vacatures</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
           </ul>
@@ -67,44 +67,41 @@
 
     <div class="container aanvraag">
         <h2>Vraag uw huishoudhulp aan</h2>
+        <p class="verplicht"><small><i>Velden met een * zijn verplicht in te vullen.</i></small></p>
         <form method="post" name="inschrijvenForm" action="aanvraagToEmail.php">
             <div class="form-group">
-                <label for="InputNaam">Naam</label>
-                <input class="form-control" name="naamInschrijven" type="text" placeholder="Naam">
+                <!-- <label for="InputNaam">Naam</label> -->
+                <input class="form-control" name="naamInschrijven" type="text" placeholder="Naam*" required>
             </div>
             <div class="form-group">
-                <label for="InputVoornaam">Voornaam</label>
-                <input class="form-control" name="voornaamInschrijven" type="text" placeholder="Voornaam">
+                <!-- <label for="InputVoornaam">Voornaam</label> -->
+                <input class="form-control" name="voornaamInschrijven" type="text" placeholder="Voornaam*" required>
             </div>
             <div class="form-group">
-                <label for="InputAdres">Adres</label>
-                <input class="form-control" name="adresInschrijven" type="text" placeholder="Adres">
+                <!-- <label for="InputAdres">Adres</label> -->
+                <input class="form-control" name="adresInschrijven" type="text" placeholder="Adres*" required>
             </div>
             <div class="form-group">
-                <label for="InputTelefoon">Telefoon</label>
-                <input class="form-control" name="telefoonInschrijven" type="text" placeholder="Telefoon">
+                <!-- <label for="InputTelefoon">Telefoon</label> -->
+                <input class="form-control" name="telefoonInschrijven" type="text" placeholder="Telefoonnummer/GSMnummer*" required>
             </div>
             <div class="form-group">
-                <label for="InputGSM">GSM</label>
-                <input class="form-control" name="gsmInschrijven" type="text" placeholder="GSM nummer">
+                <!-- <label for="InputEmail1">Email adres</label> -->
+                <input type="email" name="emailInschrijven" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Email*" required>
             </div>
             <div class="form-group">
-                <label for="InputEmail1">Email adres</label>
-                <input type="email" name="emailInschrijven" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Email">
-            </div>
-            <div class="form-group">
-                <label for="InputSom">Hoe heb je S.O.M. leren kennen?</label>
-                <input class="form-control" name="somInschrijven" type="text" placeholder="Hoe heb je S.O.M. leren kennen">
+                <!-- <label for="InputSom">Hoe heb je S.O.M. leren kennen?</label> -->
+                <input class="form-control" name="somInschrijven" type="text" placeholder="Hoe heb je S.O.M. leren kennen" required>
             </div>
             <div class="form-group">
                 <div class="form-group">
-                    <label for="InputUren">Hoeveel uren wil je een huishoudhulp?</label>
-                    <input class="form-control" name="somSol" type="text" placeholder="bv 3,4 of meer uren per week of om de 2 weken">
+                    <!-- <label for="InputUren">Hoeveel uren wil je een huishoudhulp?</label> -->
+                    <input class="form-control" name="somSol" type="text" placeholder="Hoeveel uren wil je een huishoudhulp?* bv 3, 4 of meer uren per week of om de 2 weken" required>
                 </div>
             </div>
             
             <div class="form-group">
-                <label for="InputUren">Op welke dagen?</label>
+                <label for="InputUren">Op welke dagen wil je een huishoudhulp?</label>
             </div>
             <div class="row checkDagen justify-content-around">
                 <div class="col-lg-2">       
@@ -207,15 +204,21 @@
             </div>
             
             <div class="form-group">
-                <label for="InputAndere">Andere huisdieren</label>
+                <!-- <label for="InputAndere">Andere huisdieren</label> -->
                 <input class="form-control" name="andereHuisdierenInschrijven" type="text" placeholder="Andere huisdieren">
             </div>
             
             <div class="form-group">
-                <label for="Opmerkingen">Opmerkingen</label>
-                <textarea class="form-control" name="opmerkingenInschrijven" id="Opmerkingen" rows="3"></textarea>
+                <!-- <label for="Opmerkingen">Opmerkingen</label> -->
+                <textarea class="form-control" name="opmerkingenInschrijven" id="Opmerkingen" rows="3" placeholder=" Type hier uw eventuele opmerkingen"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">vraag uw huishoudhulp aan</button>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="checkGDPRinschrijven" value="andere" id="checkGDPRinschrijven">
+                <label class="form-check-label mb-4" for="checkGDPRinschrijven">
+                    Bij het gebruiken van dit formulier ga je akkorrd met het opslaan en verwerken van de door jou opgegeven gegevens door deze website, zoals aangegeven in <a href="privacybeleid.html">ons privacybeleid</a>.*
+                </label>
+            </div>
+            <button id="completeInschrijven" disabled="disabled" type="submit" class="btn btn-primary">vraag uw huishoudhulp aan</button>
         </form>
     </div>
   

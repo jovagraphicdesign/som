@@ -40,7 +40,7 @@
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -49,7 +49,7 @@
           <li class="nav-item">
             <a class="nav-link" href="dienstencheques.html">Dienstencheques</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="vacatures.html">Vacatures</a>
           </li>
           <li class="nav-item">
@@ -67,47 +67,44 @@
     
     <div class="container soliciteren">
         <h2>Solliciteer als huishoudhulp</h2>
+        <p class="verplicht"><small><i>Velden met een * zijn verplicht in te vullen.</i></small></p>
         <form method="post" name="solliciteerForm" action="solliciteerToEmail.php">
             <div class="form-group">
-                <label for="InputNaam">Naam</label>
-                <input class="form-control" name="naamSol" type="text" placeholder="Naam">
+                <!-- <label for="InputNaam">Naam</label> -->
+                <input class="form-control" name="naamSol" type="text" placeholder="Naam*" required>
             </div>
             <div class="form-group">
-                <label for="InputVoornaam">Voornaam</label>
-                <input class="form-control" name="voornaamSol" type="text" placeholder="Voornaam">
+                <!-- <label for="InputVoornaam">Voornaam</label> -->
+                <input class="form-control" name="voornaamSol" type="text" placeholder="Voornaam*" required>
             </div>
             <div class="form-group">
-                <label for="InputAdres">Adres</label>
-                <input class="form-control" name="adresSol" type="text" placeholder="Adres">
+                <!-- <label for="InputAdres">Adres</label> -->
+                <input class="form-control" name="adresSol" type="text" placeholder="Adres*" required>
             </div>
             <div class="form-group">
-                <label for="InputTelefoon">Telefoon</label>
-                <input class="form-control" name="telefoonSol" type="text" placeholder="Telefoon">
+                <!-- <label for="InputTelefoon">Telefoonnummer/GSMnummer</label> -->
+                <input class="form-control" name="telefoonSol" type="text" placeholder="Telefoon/GSMnummer*" required>
             </div>
             <div class="form-group">
-                <label for="InputGSM">GSM</label>
-                <input class="form-control" name="gsmSol" type="text" placeholder="GSM nummer">
+                <!-- <label for="InputEmail1">Email adres</label> -->
+                <input type="email" name="emailSol" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Email*" required>
             </div>
             <div class="form-group">
-                <label for="InputEmail1">Email adres</label>
-                <input type="email" name="emailSol" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                <!-- <label for="InputDiploma">Relevante ervaring</label> -->
+                <input class="form-control" name="diplomaSol" type="text" placeholder="Relevante ervaring*" required>
             </div>
             <div class="form-group">
-                <label for="InputDiploma">Relevante ervaring</label>
-                <input class="form-control" name="diplomaSol" type="text" placeholder="Relevante ervaring">
+                <!-- <label for="InputSom">Hoe heb je S.O.M. leren kennen?</label> -->
+                <input class="form-control" type="text" placeholder="Hoe heb je S.O.M. leren kennen" >
             </div>
             <div class="form-group">
-                <label for="InputSom">Hoe heb je S.O.M. leren kennen?</label>
-                <input class="form-control" type="text" placeholder="Hoe heb je S.O.M. leren kennen">
-            </div>
-            <div class="form-group">
-                <label for="InputUren">Hoeveel uren wil je per week werken?</label>
-                <input class="form-control" name="somSol" type="text" placeholder="aantal uren per week">
+                <!-- <label for="InputUren">Hoeveel uren wil je per week werken?</label> -->
+                <input class="form-control" name="somSol" type="text" placeholder="Hoeveel uren wil je per week werken*" required>
             </div>
             
             <div class="form-group">
                 <label for="InputUren">Wat zijn jouw voorkeursdagen?</label>
-                <p><small>Deze dagen zijn onder voorbehoud!</small></p>
+                <p class="verplicht mt-1"><small><i>Deze dagen zijn onder voorbehoud!</i></small></p>
             </div>
             <div class="row checkDagen justify-content-around">
                 <div class="col-lg-2">       
@@ -182,10 +179,16 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="opmerkingen">Opmerkingen</label>
-                <textarea class="form-control" name="opmerkingenSol" id="opmerkingen" rows="3"></textarea>
+                <!-- <label for="opmerkingen">Opmerkingen</label> -->
+                <textarea class="form-control" name="opmerkingenSol" id="opmerkingen" rows="3" placeholder="Type hier uw eventuele opmerkingen"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Solliciteer online</button>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="checkGDPRsolliciteer" value="andere" id="gdprChecksolliciteer">
+                <label class="form-check-label mb-4" for="gdprChecksolliciteer">
+                    Bij het gebruiken van dit formulier ga je akkorrd met het opslaan en verwerken van de door jou opgegeven gegevens door deze website, zoals aangegeven in <a href="privacybeleid.html">ons privacybeleid</a>.*
+                </label>
+            </div>
+            <button id="completeSolliciteer" type="submit" class="btn btn-primary" disabled="disabled">Solliciteer online</button>
         </form>
     </div>
 
