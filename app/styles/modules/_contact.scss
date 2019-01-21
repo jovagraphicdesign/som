@@ -42,4 +42,10 @@
     .verplicht{
         color: $paars;
     }
+    label a{
+        color: $paars;
+        &:hover{
+            color: $paars;
+        }
+    }
 }
